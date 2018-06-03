@@ -1,12 +1,11 @@
 
 
-@yellow: #ffdd00;
-@gray:    #7c7c7c;
+
 
 /* top menu bar*/
 .navigationButton{
 	text-decoration: none;
-	color: #7c7c7c;
+	color: gray;
 	margin-left: 5%;
 	width: 25%;
 	flaot:left;
@@ -62,6 +61,7 @@
 .navigationButton:hover{
 	animation: navigationButtonColorTransition 0.3s linear both;
 }
+
 @keyframes navigationButtonColorTransition{
 	0%{
 		color: #7c7c7c;
@@ -98,4 +98,213 @@
    -ms-transform: translate(0, -100%);
    transform: translate(0, -100%);
    -webkit-backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact form */
+ 
+
+.contact-form-page{
+  height: 50px;
+  width: 50px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 42px;
+  right: 42px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #fff;
+
+}
+
+.show-profile{
+  background: #fff;
+  height: 100%;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  overflow-y: scroll;
+  border-radius: 0;
+
+}
+
+.form-profile-img{
+  float: left;
+}
+.form-profile-img img{
+    border-radius: 50%;
+    margin: 20px 0 0 14px;
+}
+.contact-form-page h1{
+  font-size: 2em;
+  color: #7c7c7c;
+  margin: 20px 26px;
+  padding: 0px;
+  line-height: 29px;
+  padding-right: 30px;
+}
+.top-btn{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  text-align: center;
+  width: 50px;
+  font-size: 1.46em;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 0;
+}
+.top-btn:hover{
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  background: #7c7c7c;
+  color: #fff
+}
+
+.header-btn, .footer-btn a{
+  font-size: 2em;
+  color: #fff;
+  background: #3aa8db;
+  float: right;
+}
+
+.buttom-btn{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: #7c7c7c;
+  color: #fff;
+  padding: 21px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+}
+.buttom-btn i{
+  font-size: 3em;
+}
+
+.buttom-btn:hover{
+  -webkit-transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+  background:#ffdd00;
+  color: #fff
+}
+input.form-control {
+  height: 30px;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 0;
+  outline: none;
+  border:none;
+  vertical-align: top;
+  font-size:20px;
+  font-family: "Raleway",sans-serif;
+  border-bottom: solid 2px #ffdd00;
+  top: 50px;
+
+
+}
+textarea.form-control {
+  height: 150px;
+  border-radius: 0;
+  margin-left: 5%;
+  width: 90%;
+  border:none;
+  border-bottom: solid 2px #ffdd00;
+}
+.form-group{
+  margin-top: 10px;
+}
+.contact-form-page form{
+padding: 20px 40px 20px 30px;
+}
+
+.contact-form-page .submit-buttom{
+  width: 90.5%;
+  margin-top: 30px;
+/*  padding: 50px -90px;*/
+  text-align: center;
+  display: block;
+  background: #9c9c9c;
+  border: none;
+  border-bottom: 5px solid #7c7c7c;
+  font-size: 2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family:'Raleway',bold;
+  margin-left: 7.4%;
+  transition: 0.5s;
+}
+.contact-form-page .submit-buttom:hover{
+  transition: 0.3s;
+  background-color: #7c7c7c;
+  font-size: 2.5em;
+}
+
+.form-group label{
+  font-size: 2em;
+  color: #fff;
+  font-family: "Raleway",sans-serif;
+  color:#7c7c7c;
+}
+
+            /*
+                BUTTON OPACITY STYLE
+            */
+.top-btn-show{
+  opacity: 1 !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #9c9c9c;
+}
+.buttom-btn-hide{
+  opacity: 0 !important;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
