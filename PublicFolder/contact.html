@@ -17,6 +17,7 @@
 <body>
 	<script>
 		$(document).ready(function() {
+			
 			$('html').on('DOMMouseScroll mousewheel', function (e) {
 	  			if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) { 
 	    		//scroll down
@@ -41,7 +42,7 @@
   		});
 
 	</script>
-	
+
 
 	<div id="topMenu" >
 		<a href="index.html" class="navigationButton">Home</a>
@@ -71,7 +72,7 @@
 	                </div>
 	                <div class="form-group">
 	                    <label for="exampleInputMessage">Message</label>
-	                    <textarea class="form-control" rows="3"  required="required"></textarea>
+	                    <textarea class="form-control" rows="3"  required="required" placeholder="your message here"></textarea>
 	                </div>
 	                <button type="submit" class="submit-buttom">Send</button>
 	            </form>
