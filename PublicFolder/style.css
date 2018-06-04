@@ -349,6 +349,7 @@ textarea.form-control:focus{
   font-size: 80px;
   font-family: 'Raleway',sans-serif;
   z-index: 1000;
+  animation: WorkJustPromptOut 3s ease;
 
 }
 /*the keyboard background*/
@@ -362,6 +363,17 @@ textarea.form-control:focus{
   }
   100%{
     opacity:0.4;
+  }
+}
+@keyframes WorkJustPromptOut{
+  0%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
 
@@ -423,7 +435,9 @@ button > span {
 }
 /* Keyboard */
 .keyboard {
-  position: relative;
+  z-index: 500;
+  position: absolute;
+  top: -48px;
   opacity: 0.2;
   box-shadow: 1em -1em 1.5em rgba(0, 0, 0, 0.6), 0 0 0 1px #aaa inset;
   animation: greetingWorld 3s ease;
